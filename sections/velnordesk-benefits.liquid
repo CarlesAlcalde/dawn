@@ -1,0 +1,17 @@
+<div class="vd-section vd-benefits color-{{ section.settings.color_scheme }} gradient">
+  <div class="vd-page">
+    {% if section.settings.heading != blank %}<div class="vd-section-head"><h2 class="vd-title">{{ section.settings.heading | escape }}</h2>{% if section.settings.text != blank %}<div class="vd-copy">{{ section.settings.text }}</div>{% endif %}</div>{% endif %}
+    <div class="vd-grid vd-grid--{{ section.settings.columns }}">
+      {% for block in section.blocks %}
+        <div class="vd-card{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>
+          <span class="vd-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <h3>{{ block.settings.title | escape }}</h3>
+          <p>{{ block.settings.text | escape }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+{"name":"VelnorDesk benefits","class":"section","settings":[{"type":"color_scheme","id":"color_scheme","label":"Color scheme","default":"scheme-1"},{"type":"text","id":"heading","label":"Heading","default":"Why your desk feels better"},{"type":"text","id":"text","label":"Subtitle","default":"Premium essentials designed for clean, focused work."},{"type":"select","id":"columns","label":"Columns","default":"4","options":[{"value":"3","label":"3"},{"value":"4","label":"4"}]}],"blocks":[{"type":"benefit","name":"Benefit","settings":[{"type":"text","id":"title","label":"Title","default":"Designed for Better Work"},{"type":"text","id":"text","label":"Text","default":"Clean forms and useful details that support your everyday workflow."}]}],"presets":[{"name":"VelnorDesk benefits","blocks":[{"type":"benefit","settings":{"title":"Designed for Better Work"}},{"type":"benefit","settings":{"title":"Premium Materials","text":"Durable finishes and tactile materials selected for daily use."}},{"type":"benefit","settings":{"title":"Clean & Functional","text":"Purposeful accessories that reduce visual noise and clutter."}},{"type":"benefit","settings":{"title":"Fast Shipping","text":"Reliable fulfillment with clear delivery expectations."}}]}]}
+{% endschema %}

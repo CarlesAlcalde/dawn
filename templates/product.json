@@ -41,6 +41,45 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "shipping": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping",
+            "icon": "truck",
+            "content": "<p>Shipping options and delivery estimates are shown at checkout.</p>",
+            "page": ""
+          }
+        },
+        "returns": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Returns",
+            "icon": "return",
+            "content": "<p>Review the store return policy for eligibility and instructions.</p>",
+            "page": ""
+          }
+        },
+        "details": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product details",
+            "icon": "clipboard",
+            "content": "<p>See the product description and specifications above for materials, sizing, and care details.</p>",
+            "page": ""
+          }
+        },
+        "benefits": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "check_mark",
+            "heading_1": "Clean setup ready",
+            "icon_2": "truck",
+            "heading_2": "Reliable delivery",
+            "icon_3": "return",
+            "heading_3": "Easy support"
+          }
         }
       },
       "block_order": [
@@ -50,7 +89,11 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "benefits",
         "description",
+        "shipping",
+        "returns",
+        "details",
         "share"
       ],
       "settings": {
@@ -65,8 +108,8 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "padding_top": 48,
+        "padding_bottom": 24
       }
     },
     "disclosures": {
@@ -79,7 +122,7 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Complete your setup",
         "heading_size": "h2",
         "products_to_show": 4,
         "columns_desktop": 4,
@@ -90,7 +133,7 @@
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
-        "padding_top": 36,
+        "padding_top": 48,
         "padding_bottom": 28
       }
     }
