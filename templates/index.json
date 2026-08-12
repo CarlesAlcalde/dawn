@@ -1,293 +1,85 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "hero": {
-      "type": "velnordesk-hero",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "eyebrow": "Premium workspace essentials",
-        "heading": "Build a Better Desk.",
-        "text": "<p>Minimal workspace essentials designed to keep your desk clean, organized, and distraction-free.</p>",
-        "primary_label": "Shop Desk Essentials",
-        "primary_link": "shopify://collections/all",
-        "secondary_label": "Explore Collections",
-        "secondary_link": "/collections"
-      }
-    },
-    "trust": {
-      "type": "velnordesk-benefits",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "heading": "",
-        "text": "",
-        "columns": "4"
-      },
+    "image_banner": {
+      "type": "image-banner",
       "blocks": {
-        "b1": {
-          "type": "benefit",
+        "heading": {
+          "type": "heading",
           "settings": {
-            "title": "Designed for Better Work",
-            "text": "Clean essentials that support deeper focus."
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
           }
         },
-        "b2": {
-          "type": "benefit",
+        "button": {
+          "type": "buttons",
           "settings": {
-            "title": "Premium Materials",
-            "text": "Durable finishes selected for everyday work."
-          }
-        },
-        "b3": {
-          "type": "benefit",
-          "settings": {
-            "title": "Clean & Functional",
-            "text": "Minimal forms with practical organization built in."
-          }
-        },
-        "b4": {
-          "type": "benefit",
-          "settings": {
-            "title": "Fast Shipping",
-            "text": "Reliable fulfillment with clear delivery expectations."
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4"
-      ]
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/81zp5Yi6NIL.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Upgrade Your Workspace",
-        "heading_size": "h2",
-        "description": "Thoughtfully designed essentials for a cleaner, more productive desk.",
-        "show_description": true,
-        "description_style": "body",
         "collection": "all",
         "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "padding_top": 56,
-        "padding_bottom": 56
-      }
-    },
-    "categories": {
-      "type": "velnordesk-categories",
-      "settings": {
-        "color_scheme": "scheme-2",
-        "heading": "Shop by workspace need",
-        "text": "Build your setup one thoughtful detail at a time."
-      },
-      "blocks": {
-        "c1": {
-          "type": "category",
-          "settings": {
-            "title": "Desk Mats",
-            "cta": "Shop now"
-          }
-        },
-        "c2": {
-          "type": "category",
-          "settings": {
-            "title": "Cable Management",
-            "cta": "Shop now"
-          }
-        },
-        "c3": {
-          "type": "category",
-          "settings": {
-            "title": "Desk Organization",
-            "cta": "Shop now"
-          }
-        },
-        "c4": {
-          "type": "category",
-          "settings": {
-            "title": "Workspace Accessories",
-            "cta": "Shop now"
-          }
-        }
-      },
-      "block_order": [
-        "c1",
-        "c2",
-        "c3",
-        "c4"
-      ]
-    },
-    "editorial": {
-      "type": "velnordesk-editorial",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "eyebrow": "Workspace clarity",
-        "heading": "Less Clutter. More Focus.",
-        "text": "<p>Everything on your desk should have a purpose.</p>",
-        "button_label": "Shop the Setup",
-        "button_link": "shopify://collections/all"
-      }
-    },
-    "why": {
-      "type": "velnordesk-benefits",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "heading": "Why choose VelnorDesk",
-        "text": "Refined accessories for calmer, more capable desks.",
-        "columns": "3"
-      },
-      "blocks": {
-        "w1": {
-          "type": "benefit",
-          "settings": {
-            "title": "Minimal by design",
-            "text": "Clean silhouettes that complement professional workspaces."
-          }
-        },
-        "w2": {
-          "type": "benefit",
-          "settings": {
-            "title": "Made to organize",
-            "text": "Each piece earns its place by reducing friction and clutter."
-          }
-        },
-        "w3": {
-          "type": "benefit",
-          "settings": {
-            "title": "Built for daily use",
-            "text": "Practical details and finishes suited to long workdays."
-          }
-        }
-      },
-      "block_order": [
-        "w1",
-        "w2",
-        "w3"
-      ]
-    },
-    "featured_collection_2": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Desk Essentials",
+        "title": "Featured products",
         "heading_size": "h2",
-        "description": "Start with the pieces that make the biggest difference.",
-        "show_description": true,
+        "description": "",
+        "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 4,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": true,
-        "image_ratio": "square",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "standard",
+        "quick_add": "none",
         "columns_mobile": "2",
-        "padding_top": 56,
-        "padding_bottom": 56
-      }
-    },
-    "story": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Designed Around Your Workspace.",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>VelnorDesk exists to make everyday workspaces cleaner, calmer, and more functional. We believe a better desk creates a better environment for better work.</p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Discover VelnorDesk",
-            "button_link": "shopify://pages/about",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 72,
-        "padding_bottom": 72
-      }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Upgrade Your Desk.",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Get workspace inspiration, new product drops, and exclusive offers.</p>"
-          }
-        },
-        "email_form": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading",
-        "paragraph",
-        "email_form"
-      ],
-      "settings": {
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 64,
-        "padding_bottom": 64
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "hero",
-    "trust",
-    "featured_collection",
-    "categories",
-    "editorial",
-    "why",
-    "featured_collection_2",
-    "story",
-    "newsletter"
+    "image_banner",
+    "featured_collection"
   ]
 }
