@@ -10,7 +10,7 @@
 {
   "current": {
     "logo": "shopify://shop_images/ChatGPT_Image_7_aug_2026_18_12_57.png",
-    "logo_width": 90,
+    "logo_width": 100,
     "favicon": "shopify://shop_images/ChatGPT_Image_8_aug_2026_19_33_32.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
@@ -146,9 +146,9 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#ffffff",
-          "background_gradient": "",
-          "text": "#121212",
+          "background": "#54967F",
+          "background_gradient": "linear-gradient(90deg, rgba(124, 163, 215, 1) 1%, rgba(90, 145, 145, 1) 50%, rgba(124, 163, 215, 1) 100%)",
+          "text": "#FFFFFF",
           "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
