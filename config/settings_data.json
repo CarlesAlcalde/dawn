@@ -149,9 +149,9 @@
           "background": "#54967F",
           "background_gradient": "linear-gradient(90deg, rgba(124, 163, 215, 1) 1%, rgba(90, 145, 145, 1) 50%, rgba(124, 163, 215, 1) 100%)",
           "text": "#FFFFFF",
-          "button": "#121212",
+          "button": "#54967F",
           "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
+          "secondary_button_label": "#54967F",
           "shadow": "#121212"
         }
       },
