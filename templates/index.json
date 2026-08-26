@@ -1,153 +1,88 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Refine Your Workspace",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Premium desk pads and accessories for clean, focused work.",
-            "text_style": "body"
-          }
-        },
-        "buttons": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Desk Pads",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "buttons"
-      ],
+    "velnordesk_split_hero": {
+      "type": "velnordesk-split-hero",
       "settings": {
-        "image": "",
-        "image_overlay_opacity": 30,
-        "image_height": "large",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Less Clutter, More Focus",
-            "heading_size": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A clean desk removes distractions and lets your best ideas take center stage. Our premium PU leather and soft felt desk mats are engineered to provide maximum comfort and protect your workspace.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
         "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 60,
-        "padding_bottom": 60
+        "eyebrow": "The Minimalist Workspace",
+        "heading": "Elevate Your Desk Setup.",
+        "text": "<p>Experience true focus with our premium PU leather and felt desk pads. Crafted for perfection.</p>",
+        "image": "",
+        "primary_label": "Shop Essentials",
+        "primary_link": "shopify://collections/all"
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Best Sellers",
-        "heading_size": "h2",
+        "title": "Signature Collection",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
-        "products_to_show": 8,
+        "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
-        "view_all_style": "solid",
+        "view_all_style": "outline",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": true,
+        "show_rating": false,
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 40,
-        "padding_bottom": 60
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
-    "image_with_text": {
-      "type": "image-with-text",
+    "velnordesk_hotspots": {
+      "type": "velnordesk-hotspots",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "hotspot_1": {
+          "type": "hotspot",
           "settings": {
-            "heading": "Designed for Durability",
-            "heading_size": "h2"
+            "top_position": 45,
+            "left_position": 55,
+            "product_title": "PU Leather Desk Mat",
+            "product_price": "$45.00",
+            "product_link": "shopify://collections/all"
           }
         },
-        "text": {
-          "type": "text",
+        "hotspot_2": {
+          "type": "hotspot",
           "settings": {
-            "text": "<p>Our premium vegan PU leather is completely waterproof and scratch-resistant. Featuring a 70% non-slip suede backing, your desk pad stays perfectly in place during intense workflows.</p>",
-            "text_style": "body"
+            "top_position": 75,
+            "left_position": 35,
+            "product_title": "Felt Keyboard Pad",
+            "product_price": "$30.00",
+            "product_link": "shopify://collections/all"
           }
         },
-        "button": {
-          "type": "button",
+        "hotspot_3": {
+          "type": "hotspot",
           "settings": {
-            "button_label": "Explore Features",
-            "button_link": "shopify://collections/all"
+            "top_position": 30,
+            "left_position": 70,
+            "product_title": "Magnetic Cable Organizer",
+            "product_price": "$22.00",
+            "product_link": "shopify://collections/all"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "hotspot_1",
+        "hotspot_2",
+        "hotspot_3"
       ],
       "settings": {
-        "image": "",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
         "color_scheme": "scheme-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "heading": "Shop The Setup",
+        "image": ""
       }
     },
     "newsletter": {
@@ -156,14 +91,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Subscribe to our emails",
-            "heading_size": "h2"
+            "heading": "Join the Waitlist",
+            "heading_size": "h1"
           }
         },
         "paragraph": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Join our newsletter to receive the latest updates, setup inspiration, and exclusive offers.</p>"
+            "text": "<p>Sign up to receive early access to new releases, setup guides, and exclusive offers.</p>"
           }
         },
         "email_form": {
@@ -177,18 +112,17 @@
         "email_form"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "full_width": true,
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
+    "velnordesk_split_hero",
     "featured_collection",
-    "image_with_text",
+    "velnordesk_hotspots",
     "newsletter"
   ]
 }
