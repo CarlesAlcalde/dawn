@@ -85,6 +85,109 @@
         "image": ""
       }
     },
+    "testimonials": {
+      "type": "multicolumn",
+      "blocks": {
+        "review_1": {
+          "type": "column",
+          "settings": {
+            "title": "★★★★★",
+            "text": "<p>\"The build quality is incredible. It completely transformed my home office.\"</p><p><strong>— Michael T.</strong></p>"
+          }
+        },
+        "review_2": {
+          "type": "column",
+          "settings": {
+            "title": "★★★★★",
+            "text": "<p>\"Mouse tracking is flawlessly smooth, and it looks so futuristic on my desk.\"</p><p><strong>— Sarah J.</strong></p>"
+          }
+        },
+        "review_3": {
+          "type": "column",
+          "settings": {
+            "title": "★★★★★",
+            "text": "<p>\"Wipes clean instantly. The best desk pad I've ever owned, hands down.\"</p><p><strong>— David L.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "review_1",
+        "review_2",
+        "review_3"
+      ],
+      "settings": {
+        "title": "Highly Rated by Professionals",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "deep_dive": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Engineered for Stability",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unlike cheap foam mats, our desk pads feature a 70% non-slip suede backing that anchors to your desk. Zero sliding, infinite focus.</p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover the Tech",
+            "button_link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image": "",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "brand_video": {
+      "type": "video",
+      "settings": {
+        "heading": "The Desk of Tomorrow",
+        "heading_size": "h1",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "enable_video_looping": true,
+        "color_scheme": "scheme-3",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
     "newsletter": {
       "type": "newsletter",
       "blocks": {
@@ -123,6 +226,9 @@
     "velnordesk_split_hero",
     "featured_collection",
     "velnordesk_hotspots",
+    "testimonials",
+    "deep_dive",
+    "brand_video",
     "newsletter"
   ]
 }

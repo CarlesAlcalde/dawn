@@ -634,6 +634,23 @@ body {
   min-height: 1em;
 }
 
+/* Footer Neon Hovers */
+.footer-block__details-content .list-menu__item,
+.footer__list-social .list-social__link {
+  position: relative;
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.footer-block__details-content .list-menu__item:hover,
+.footer__list-social .list-social__link:hover {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255,255,255,0.8), 0 0 15px rgba(255,255,255,0.4);
+  transform: translateX(4px);
+}
+.footer__list-social .list-social__link:hover {
+  transform: translateY(-4px);
+}
+
 @media screen and (min-width: 750px) {
   .vd-grid--4 {
     grid-template-columns: repeat(4, 1fr);

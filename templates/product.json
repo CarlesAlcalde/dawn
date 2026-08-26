@@ -149,11 +149,86 @@
         "padding_top": 48,
         "padding_bottom": 28
       }
+    },
+    "product_benefits": {
+      "type": "multicolumn",
+      "blocks": {
+        "benefit_1": {
+          "type": "column",
+          "settings": {
+            "title": "Water & Scratch Resistant",
+            "text": "<p>Engineered to withstand daily coffee spills and heavy equipment scuffs.</p>"
+          }
+        },
+        "benefit_2": {
+          "type": "column",
+          "settings": {
+            "title": "Magnetic Precision",
+            "text": "<p>Flawless optical mouse tracking across the entire surface area.</p>"
+          }
+        },
+        "benefit_3": {
+          "type": "column",
+          "settings": {
+            "title": "Zero-Slip Backing",
+            "text": "<p>Anchors perfectly to glass, wood, and metal without sliding.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_1",
+        "benefit_2",
+        "benefit_3"
+      ],
+      "settings": {
+        "title": "Why VelnorDesk?",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-2",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "guarantee": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Velnor Guarantee",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We build our desk setups to last a lifetime. If you aren't completely obsessed with your workspace upgrade, return it within 30 days for a full refund.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 80
+      }
     }
   },
   "order": [
     "main",
     "disclosures",
-    "related-products"
+    "product_benefits",
+    "related-products",
+    "guarantee"
   ]
 }
