@@ -1,0 +1,113 @@
+<!-- Futuristic Elements -->
+<div class="vd-scroll-progress"></div>
+<div class="vd-cursor"></div>
+<div class="vd-cursor-follower"></div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Scroll Progress Bar
+    const progressBar = document.querySelector('.vd-scroll-progress');
+    window.addEventListener('scroll', () => {
+      const scrollTotal = document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollPercent = (scrollTotal / height) * 100;
+      if (progressBar) progressBar.style.width = scrollPercent + '%';
+    });
+
+    // 2. Custom Cursor & Magnetic Buttons
+    const cursor = document.querySelector('.vd-cursor');
+    const follower = document.querySelector('.vd-cursor-follower');
+    
+    // Only enable custom cursor on non-touch devices
+    if (window.matchMedia('(pointer: fine)').matches) {
+      document.body.classList.add('vd-custom-cursor-enabled');
+      
+      let mouseX = 0, mouseY = 0;
+      let followerX = 0, followerY = 0;
+      
+      window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        
+        // Instant cursor update
+        cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+      });
+      
+      // Smooth follower animation
+      const animateFollower = () => {
+        followerX += (mouseX - followerX) * 0.15;
+        followerY += (mouseY - followerY) * 0.15;
+        follower.style.transform = `translate3d(${followerX}px, ${followerY}px, 0)`;
+        requestAnimationFrame(animateFollower);
+      };
+      animateFollower();
+      
+      // Magnetic hover effects
+      const magnetics = document.querySelectorAll('.button, .vd-hotspot__dot, a');
+      
+      magnetics.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          cursor.classList.add('vd-cursor--hover');
+          follower.classList.add('vd-cursor-follower--hover');
+        });
+        
+        el.addEventListener('mouseleave', () => {
+          cursor.classList.remove('vd-cursor--hover');
+          follower.classList.remove('vd-cursor-follower--hover');
+          el.style.transform = '';
+        });
+        
+        // True magnetic pull for buttons
+        if(el.classList.contains('button') || el.classList.contains('vd-hotspot__dot')) {
+          el.addEventListener('mousemove', (e) => {
+            const rect = el.getBoundingClientRect();
+            const h = rect.width / 2;
+            const w = rect.height / 2;
+            const x = e.clientX - rect.left - h;
+            const y = e.clientY - rect.top - w;
+            
+            // Pull the button slightly towards the mouse
+            el.style.transform = `translate3d(${x * 0.3}px, ${y * 0.3}px, 0)`;
+          });
+        }
+      });
+    }
+
+    // 3. Decode Text Reveal
+    const decodeElements = document.querySelectorAll('.vd-decode-text');
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*';
+    
+    const decodeText = (element) => {
+      const originalText = element.dataset.original || element.innerText;
+      if (!element.dataset.original) element.dataset.original = originalText;
+      
+      let iterations = 0;
+      const maxIterations = originalText.length;
+      
+      const interval = setInterval(() => {
+        element.innerText = originalText.split('').map((letter, index) => {
+          if (index < iterations) return originalText[index];
+          if (letter === ' ') return ' ';
+          return chars[Math.floor(Math.random() * chars.length)];
+        }).join('');
+        
+        if (iterations >= maxIterations) {
+          clearInterval(interval);
+        }
+        iterations += 1/3;
+      }, 30);
+    };
+
+    // Run decode on elements when they enter viewport
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          decodeText(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    decodeElements.forEach(el => observer.observe(el));
+  });
+</script>
