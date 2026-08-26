@@ -629,26 +629,94 @@ body {
 }
 
 /* Decode Text Animation Class */
-.vd-decode-text {
-  display: inline-block;
-  min-height: 1em;
+/* --- Hyper-Futuristic V2 Upgrades --- */
+
+/* 1. CRT Scanline Overlay */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.05) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.02));
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.6;
 }
 
-/* Footer Neon Hovers */
-.footer-block__details-content .list-menu__item,
-.footer__list-social .list-social__link {
+/* 2. HUD Digital Matrix Background for Dark Sections */
+.color-scheme-3 {
   position: relative;
-  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+.color-scheme-3::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center center;
+  z-index: 0;
+  pointer-events: none;
+  animation: hud-pan 60s linear infinite;
+}
+@keyframes hud-pan {
+  0% { background-position: 0 0; }
+  100% { background-position: 400px 400px; }
+}
+.color-scheme-3 > * {
+  position: relative;
+  z-index: 1;
 }
 
-.footer-block__details-content .list-menu__item:hover,
-.footer__list-social .list-social__link:hover {
-  color: #fff;
-  text-shadow: 0 0 8px rgba(255,255,255,0.8), 0 0 15px rgba(255,255,255,0.4);
-  transform: translateX(4px);
+/* 3. Cyber-Accents (HUD Data Overlays) */
+.header-wrapper::before {
+  content: "// SYS.NAV.ACTIVE";
+  position: absolute;
+  top: 10px; right: 20px;
+  font-family: monospace;
+  font-size: 1rem;
+  color: var(--vd-muted);
+  letter-spacing: 0.1em;
+  z-index: 5;
+  opacity: 0.7;
 }
-.footer__list-social .list-social__link:hover {
-  transform: translateY(-4px);
+.footer::before {
+  content: "DATA_NODE_SECURE";
+  position: absolute;
+  bottom: 20px; left: 20px;
+  font-family: monospace;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 0.1em;
+  z-index: 5;
+}
+
+/* 4. 3D Tilt Card Base & Glare */
+.vd-tilt-card {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+.vd-tilt-glare {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 10;
+}
+.vd-tilt-glare-inner {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.4) 0%, transparent 60%);
+  transform: translate(-50%, -50%) translate(0, 0);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.vd-tilt-card:hover .vd-tilt-glare-inner {
+  opacity: 1;
 }
 
 @media screen and (min-width: 750px) {
