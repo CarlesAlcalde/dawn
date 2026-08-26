@@ -1,52 +1,112 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "velnordesk_hero": {
+      "type": "velnordesk-hero",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "eyebrow": "Ergonomic & Minimal Workspace Essentials",
+        "heading": "Build a Better, Focused Desk Setup.",
+        "text": "<p>Elevate your everyday workspace with precision-crafted PU leather blotters and soft felt desk mats. Designed to protect your desktop and inspire clear thinking.</p>",
+        "image": "shopify://files/91F-UR3w4NL.jpg",
+        "primary_label": "Shop Desk Essentials",
+        "primary_link": "shopify://collections/all",
+        "secondary_label": "Explore Felt & Leather",
+        "secondary_link": "shopify://collections/all"
+      }
+    },
+    "velnordesk_marquee": {
+      "type": "velnordesk-marquee",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "item_1": {
+          "type": "item",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "icon": "✨",
+            "text": "Premium Vegan PU Leather"
           }
         },
-        "button": {
-          "type": "buttons",
+        "item_2": {
+          "type": "item",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "icon": "🛡️",
+            "text": "70% Non-Slip Suede Backing"
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "icon": "💧",
+            "text": "Wipe-Clean Waterproof Finish"
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "icon": "🌿",
+            "text": "Soft & Natural Felt Fabric"
+          }
+        },
+        "item_5": {
+          "type": "item",
+          "settings": {
+            "icon": "⚡",
+            "text": "Stitched Edges Built to Last"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5"
       ],
       "settings": {
-        "image": "shopify://shop_images/81zp5Yi6NIL.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "image_behavior": "none",
-        "desktop_content_position": "bottom-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-3",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
+        "color_scheme": "scheme-3"
+      }
+    },
+    "velnordesk_benefits": {
+      "type": "velnordesk-benefits",
+      "blocks": {
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "title": "Durable PU Leather",
+            "text": "Protects your desk from scratches, heat damage, coffee spills, and heavy scuffs."
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "title": "70% Non-Slip Suede Backing",
+            "text": "High-friction backing holds firm on wood, glass, and metal without sliding."
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "title": "Soft Acoustic Felt",
+            "text": "Dampens typing resonance and provides smooth, effortless optical mouse tracking."
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "title": "Easy Wipe-Clean Maintenance",
+            "text": "Waterproof and oil-resistant surface wipes clean in seconds with just a damp towel."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "heading": "Why VelnorDesk Makes a Difference",
+        "text": "Thoughtful engineering and tactile materials crafted for your daily productivity.",
+        "columns": "4"
       }
     },
     "featured_collection": {
@@ -54,10 +114,10 @@
       "settings": {
         "collection": "all",
         "products_to_show": 8,
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
+        "title": "Best Sellers & Featured Desk Essentials",
+        "heading_size": "h1",
+        "description": "<p>Discover our top-rated desk pads and workspace accessories engineered for perfection.</p>",
+        "show_description": true,
         "description_style": "body",
         "columns_desktop": 4,
         "enable_desktop_slider": false,
@@ -69,17 +129,120 @@
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
+        "show_rating": true,
+        "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "velnordesk_editorial": {
+      "type": "velnordesk-editorial",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "image": "shopify://files/91Fcia1zCmL.jpg",
+        "eyebrow": "Workspace Philosophy",
+        "heading": "Less Clutter. Maximum Focus.",
+        "text": "<p>A clean desktop removes visual noise and lets your best work take center stage. Every VelnorDesk mat is built with clean lines, soft textures, and reinforced edges to transform your desk into an inspiring workstation.</p>",
+        "button_label": "Explore Collection",
+        "button_link": "shopify://collections/all"
+      }
+    },
+    "testimonials": {
+      "type": "multicolumn",
+      "blocks": {
+        "review_1": {
+          "type": "column",
+          "settings": {
+            "title": "⭐⭐⭐⭐⭐ Game-changer for my desk",
+            "text": "<p>\"The 48×24 PU leather pad completely transformed my standing desk. It feels super premium, stays locked in place, and wipes clean easily.\"</p><p><strong>— Alex M., Software Engineer</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "review_2": {
+          "type": "column",
+          "settings": {
+            "title": "⭐⭐⭐⭐⭐ Soft, precise, and sleek",
+            "text": "<p>\"The felt desk mat gives my home office such a cozy, modern aesthetic. Mouse tracking is smooth and keyboard typing sounds quiet and muted!\"</p><p><strong>— Elena R., Product Designer</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "review_3": {
+          "type": "column",
+          "settings": {
+            "title": "⭐⭐⭐⭐⭐ Premium craftsmanship",
+            "text": "<p>\"Stitching on the edges is top notch. No fraying, no strange odor out of the box, just instant workspace upgrade. Highly recommended!\"</p><p><strong>— David K., Workspace Architect</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_1",
+        "review_2",
+        "review_3"
+      ],
+      "settings": {
+        "title": "Loved by Desk Enthusiasts & Creators",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Upgrade Your Desk Setup",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join the VelnorDesk community to receive setup guides, new product releases, and 10% off your first order.</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email_form"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "velnordesk_hero",
+    "velnordesk_marquee",
+    "velnordesk_benefits",
+    "featured_collection",
+    "velnordesk_editorial",
+    "testimonials",
+    "newsletter"
   ]
 }
