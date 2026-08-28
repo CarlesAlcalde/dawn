@@ -1,0 +1,209 @@
+{%- comment -%}
+  Renders the VelnorDesk futuristic vector SVG logo and stylized typography.
+  Accepts:
+  - class: {String} Additional CSS classes (optional)
+  - height: {Number|String} Explicit height in px (optional, default: 38)
+  - width: {Number|String} Explicit width in px (optional)
+  - show_text: {Boolean} Whether to render logotype text alongside the cyber emblem (default: true)
+  - tagline: {String} Custom subtitle tagline (optional, default: 'FUTURE WORKSPACE')
+  - is_footer: {Boolean} Whether logo is used in footer context (optional)
+
+  Usage:
+  {% render 'velnordesk-logo' %}
+  {% render 'velnordesk-logo', class: 'header__heading-logo-svg', height: 40 %}
+  {% render 'velnordesk-logo', class: 'footer-logo', height: 32 %}
+{%- endcomment -%}
+
+{%- liquid
+  assign logo_class = class | default: ''
+  assign logo_height = height | default: 38
+  assign render_text = true
+  if show_text == false
+    assign render_text = false
+  endif
+  assign logo_tagline = tagline | default: 'FUTURE WORKSPACE'
+  assign suffix = logo_class | replace: ' ', '-' | replace: '_', '-' | default: 'main'
+-%}
+
+<svg
+  class="velnordesk-logo{% if logo_class != blank %} {{ logo_class }}{% endif %}"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="{% if render_text %}0 0 220 44{% else %}0 0 44 44{% endif %}"
+  fill="none"
+  aria-label="VelnorDesk"
+  role="img"
+  style="{% if width != blank %}width: {{ width }}px; height: auto;{% elsif logo_height != blank %}height: {{ logo_height }}px; width: auto;{% endif %} display: inline-block; vertical-align: middle;"
+>
+  <defs>
+    <!-- Brand Color Gradient Accents: Cyber Cyan (#00F0FF), Electric Blue (#0066FF), Electric Violet (#8B5CF6) -->
+    <linearGradient id="vd-cyan-blue-{{ suffix }}" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#0066FF" />
+    </linearGradient>
+    <linearGradient id="vd-blue-violet-{{ suffix }}" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <linearGradient id="vd-violet-cyan-{{ suffix }}" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#00F0FF" />
+    </linearGradient>
+    <linearGradient id="vd-text-cyan-blue-{{ suffix }}" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#0088FF" />
+    </linearGradient>
+    <!-- Cyber Neon Glow Filter -->
+    <filter id="vd-glow-{{ suffix }}" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Futuristic Cyber Geometric Emblem (Hexagonal V Monolith) -->
+  <g class="vd-logo-emblem">
+    <!-- Top Geometric Facet (Desk Plane) -->
+    <polygon
+      points="22,4 38,13 22,21 6,13"
+      fill="url(#vd-violet-cyan-{{ suffix }})"
+      opacity="0.9"
+    />
+    <!-- Left Geometric Facet (Precision Chamfer) -->
+    <polygon
+      points="6,15 20,23 20,38 6,30"
+      fill="url(#vd-cyan-blue-{{ suffix }})"
+    />
+    <!-- Right Geometric Facet (Electric Shield) -->
+    <polygon
+      points="38,15 38,30 24,38 24,23"
+      fill="url(#vd-blue-violet-{{ suffix }})"
+    />
+
+    <!-- Inner Core Dynamic Monogram 'V' -->
+    <path
+      d="M13,16 L22,21 L31,16 L22,34 Z"
+      fill="#0A0D14"
+      opacity="0.75"
+    />
+    <path
+      d="M15,18 L22,22.5 L29,18 L22,31 Z"
+      fill="url(#vd-cyan-blue-{{ suffix }})"
+      opacity="0.85"
+    />
+
+    <!-- Tech Circuit Grid Lines & Traces -->
+    <line
+      x1="6"
+      y1="13"
+      x2="22"
+      y2="4"
+      stroke="#00F0FF"
+      stroke-width="1.2"
+      stroke-linecap="round"
+      opacity="0.8"
+    />
+    <line
+      x1="22"
+      y1="4"
+      x2="38"
+      y2="13"
+      stroke="#8B5CF6"
+      stroke-width="1.2"
+      stroke-linecap="round"
+      opacity="0.8"
+    />
+    <line
+      x1="6"
+      y1="30"
+      x2="20"
+      y2="38"
+      stroke="#00F0FF"
+      stroke-width="1.2"
+      stroke-linecap="round"
+      opacity="0.9"
+    />
+    <line
+      x1="38"
+      y1="30"
+      x2="24"
+      y2="38"
+      stroke="#8B5CF6"
+      stroke-width="1.2"
+      stroke-linecap="round"
+      opacity="0.9"
+    />
+
+    <!-- Glowing Core Micro-Nodes -->
+    <circle
+      cx="22"
+      cy="21"
+      r="2"
+      fill="#00F0FF"
+      filter="url(#vd-glow-{{ suffix }})"
+    />
+    <circle
+      cx="6"
+      cy="13"
+      r="1.2"
+      fill="#00F0FF"
+    />
+    <circle
+      cx="38"
+      cy="13"
+      r="1.2"
+      fill="#8B5CF6"
+    />
+  </g>
+
+  {%- if render_text -%}
+    <!-- Stylized Futuristic Logotype Typography -->
+    <g class="vd-logo-typography">
+      <!-- Main Brand Logotype Text -->
+      <text
+        x="50"
+        y="25"
+        font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="19"
+        font-weight="800"
+        letter-spacing="0.08em"
+        fill="currentColor"
+      >
+        VELNOR<tspan fill="url(#vd-text-cyan-blue-{{ suffix }})" font-weight="700">DESK</tspan>
+      </text>
+
+      <!-- Subtitle Tagline / HUD Node Info -->
+      <text
+        x="51"
+        y="35"
+        font-family="'Space Mono', 'SF Mono', Consolas, monospace"
+        font-size="6.5"
+        font-weight="600"
+        letter-spacing="0.22em"
+        fill="#00F0FF"
+        opacity="0.85"
+      >
+        {{- logo_tagline -}}
+      </text>
+
+      <!-- Micro Tech HUD Status Dots -->
+      <rect
+        x="192"
+        y="16"
+        width="4"
+        height="4"
+        fill="#00F0FF"
+        opacity="0.8"
+        rx="1"
+      />
+      <circle
+        cx="204"
+        cy="18"
+        r="1.5"
+        fill="#8B5CF6"
+        opacity="0.9"
+      />
+    </g>
+  {%- endif -%}
+</svg>

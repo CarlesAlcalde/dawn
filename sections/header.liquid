@@ -172,7 +172,9 @@
             }}
           </div>
         {%- else -%}
-          <span class="h2">{{ shop.name }}</span>
+          <div class="header__heading-logo-wrapper">
+            {%- render 'velnordesk-logo', class: 'header__heading-logo-svg', height: 42 -%}
+          </div>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
@@ -215,7 +217,9 @@
             }}
           </div>
         {%- else -%}
-          <span class="h2">{{ shop.name }}</span>
+          <div class="header__heading-logo-wrapper">
+            {%- render 'velnordesk-logo', class: 'header__heading-logo-svg', height: 42 -%}
+          </div>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}

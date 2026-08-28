@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VelnorDesk Custom Futuristic Iconography Set</title>
+  <style>
+    :root {
+      --vd-bg-dark: #0a0d14;
+      --vd-surface-dark: #121824;
+      --vd-cyan: #00f0ff;
+      --vd-violet: #8b5cf6;
+      --vd-text-primary: #f8fafc;
+      --vd-text-muted: #94a3b8;
+    }
+    body {
+      background: var(--vd-bg-dark);
+      color: var(--vd-text-primary);
+      font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 40px;
+      margin: 0;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, var(--vd-cyan), var(--vd-violet));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    p.subtitle {
+      color: var(--vd-text-muted);
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: var(--vd-surface-dark);
+      border: 1px solid rgba(0, 240, 255, 0.2);
+      border-radius: 12px;
+      padding: 28px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--vd-cyan);
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+    }
+    .icon-box {
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--vd-cyan);
+      background: rgba(0, 240, 255, 0.05);
+      border-radius: 8px;
+      border: 1px solid rgba(0, 240, 255, 0.15);
+      transition: color 0.2s, filter 0.2s, background 0.2s;
+    }
+    .card:hover .icon-box {
+      color: #ffffff;
+      background: rgba(0, 240, 255, 0.15);
+      filter: drop-shadow(0 0 10px var(--vd-cyan));
+    }
+    .icon-box svg {
+      width: 36px;
+      height: 36px;
+    }
+    .title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      font-family: monospace;
+    }
+    .meta {
+      font-size: 11px;
+      color: var(--vd-text-muted);
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>VelnorDesk Custom Icon Set</h1>
+  <p class="subtitle">Requirement R3: Custom Futuristic Iconography Suite</p>
+  <div class="grid">
+        <div class="card">
+      <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-cart" viewBox="0 0 40 40">
+  <path fill="currentColor" fill-rule="evenodd" d="M16.5 5h7l2.5 3v3.5h-2.2V8.8L22.3 7h-4.6L16.2 8.8v2.7H14V8l2.5-3zm-6.5 6h20l2.5 15-4 5H11.5l-4-5L10 11zm2.2 2.2l-2.05 12.3 3.05 3.5h13.6l3.05-3.5-2.05-12.3H12.2zm2.8 3.3h10v2.2H15v-2.2zm-1.2 4.2h12.4v2.2H13.8v-2.2zm1.7 4.2h8.8v2.2h-8.8v-2.2z" clip-rule="evenodd"/>
+</svg>
+</div>
+      <div class="title">icon-cart.svg</div>
+      <div class="meta">viewBox: 0 0 40 40</div>
+      <div class="meta">class: icon icon-cart</div>
+    </div>    <div class="card">
+      <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-cart-empty" viewBox="0 0 40 40">
+  <path fill="currentColor" fill-rule="evenodd" d="M16.5 5h7l2.5 3v3.5h-2.2V8.8L22.3 7h-4.6L16.2 8.8v2.7H14V8l2.5-3zm-6.5 6h20l2.5 15-4 5H11.5l-4-5L10 11zm2.2 2.2l-2.05 12.3 3.05 3.5h13.6l3.05-3.5-2.05-12.3H12.2z" clip-rule="evenodd"/>
+</svg>
+</div>
+      <div class="title">icon-cart-empty.svg</div>
+      <div class="meta">viewBox: 0 0 40 40</div>
+      <div class="meta">class: icon icon-cart-empty</div>
+    </div>    <div class="card">
+      <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-search" viewBox="0 0 18 19">
+  <path fill="currentColor" fill-rule="evenodd" d="M7.5 1C3.91 1 1 3.91 1 7.5S3.91 14 7.5 14c1.47 0 2.83-.49 3.92-1.32l4.36 4.36a1 1 0 0 0 1.42-1.42l-4.36-4.36A6.47 6.47 0 0 0 14 7.5C14 3.91 11.09 1 7.5 1zm0 1.8a4.7 4.7 0 1 1 0 9.4 4.7 4.7 0 0 1 0-9.4zm-.75 2.2h1.5v1.75H10v1.5H8.25V10h-1.5V8.25H5v-1.5h1.75V5z" clip-rule="evenodd"/>
+</svg>
+</div>
+      <div class="title">icon-search.svg</div>
+      <div class="meta">viewBox: 0 0 18 19</div>
+      <div class="meta">class: icon icon-search</div>
+    </div>    <div class="card">
+      <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-account" viewBox="0 0 18 19">
+  <path fill="currentColor" fill-rule="evenodd" d="M9 1.5l3.5 2v4l-3.5 2-3.5-2v-4l3.5-2zm-1.75 3.5v1h3.5v-1h-3.5zM9 10.5l5.5 1.5 2 5.5H1.5l2-5.5L9 10.5zm0 1.8l-4 1.1-1.2 3.6h10.4l-1.2-3.6L9 12.3z" clip-rule="evenodd"/>
+</svg>
+</div>
+      <div class="title">icon-account.svg</div>
+      <div class="meta">viewBox: 0 0 18 19</div>
+      <div class="meta">class: icon icon-account</div>
+    </div>    <div class="card">
+      <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-arrow" viewBox="0 0 14 10">
+  <path fill="currentColor" fill-rule="evenodd" d="M8.2.8a.75.75 0 0 1 1.1-.05l4.2 4a.75.75 0 0 1 0 1.1l-4.2 4a.75.75 0 1 1-1.03-1.09L10.9 6.25H1a.75.75 0 0 1 0-1.5h9.9L8.27 2.24A.75.75 0 0 1 8.2.8z" clip-rule="evenodd"/>
+</svg>
+</div>
+      <div class="title">icon-arrow.svg</div>
+      <div class="meta">viewBox: 0 0 14 10</div>
+      <div class="meta">class: icon icon-arrow</div>
+    </div>    <div class="card">
+      <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-accordion icon-lightning-bolt" viewBox="0 0 20 20">
+  <path fill="currentColor" fill-rule="evenodd" d="M11.5 1l-9 10.5h6.5l-2.5 7.5 11-12h-7l3-6h-2zm-1.8 9.5H5.4l5.3-6.2-1.8 3.7h5.1l-6.8 7.4 1.5-4.9z" clip-rule="evenodd"/>
+</svg>
+</div>
+      <div class="title">icon-lightning-bolt.svg</div>
+      <div class="meta">viewBox: 0 0 20 20</div>
+      <div class="meta">class: icon icon-accordion icon-lightning-bolt</div>
+    </div>    <div class="card">
+      <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-accordion icon-lock" viewBox="0 0 20 20">
+  <path fill="currentColor" fill-rule="evenodd" d="M6 8V5.5L8.5 3h3L14 5.5V8h-2V6l-1-1h-2L8 6v2H6zm-2.5 0h13l1.5 2.5v7l-2.5 2.5h-11L2 17.5v-7L3.5 8zm1.8 2l-1 1.5v5.8l1.4 1.4h8.6l1.4-1.4v-5.8l-1-1.5H5.3zm3.7 2h2v2.5H9V12zm-.5 3.5h3V17h-3v-1.5z" clip-rule="evenodd"/>
+</svg>
+</div>
+      <div class="title">icon-lock.svg</div>
+      <div class="meta">viewBox: 0 0 20 20</div>
+      <div class="meta">class: icon icon-accordion icon-lock</div>
+    </div>    <div class="card">
+      <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-checkmark" viewBox="0 0 12 9">
+  <path fill="currentColor" fill-rule="evenodd" d="M11.35.64a.5.5 0 0 1 .01.71l-6.77 6.89a.5.5 0 0 1-.72 0L.64 4.85a.5.5 0 1 1 .72-.69l2.88 3.01L10.65.65a.5.5 0 0 1 .7-.01z" clip-rule="evenodd"/>
+</svg>
+</div>
+      <div class="title">icon-checkmark.svg</div>
+      <div class="meta">viewBox: 0 0 12 9</div>
+      <div class="meta">class: icon icon-checkmark</div>
+    </div>
+  </div>
+</body>
+</html>

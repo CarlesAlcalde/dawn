@@ -121,6 +121,12 @@
                               width: settings.brand_image_width
                           }}
                         </div>
+                      {%- else -%}
+                        <div class="footer-block__logo-wrapper">
+                          <a href="{{ routes.root_url }}" class="link focus-inset footer__logo-link">
+                            {%- render 'velnordesk-logo', class: 'footer-logo', height: 34 -%}
+                          </a>
+                        </div>
                       {%- endif -%}
                       {%- if settings.brand_headline != blank -%}
                         <h2 class="footer-block__heading rte">{{ settings.brand_headline }}</h2>
@@ -298,6 +304,11 @@
       </div>
     </div>
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
+      <div class="footer__brand-bottom">
+        <a href="{{ routes.root_url }}" class="footer__bottom-logo-link link focus-inset" aria-label="VelnorDesk">
+          {%- render 'velnordesk-logo', class: 'footer-logo-bottom', height: 26 -%}
+        </a>
+      </div>
       <div class="footer__copyright caption">
         <small class="copyright__content"
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
